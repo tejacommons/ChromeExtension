@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "EasyCopy",
+    "version": "1.0",
+    "description": "Easily copy text or content from web pages.",
+    "permissions": ["activeTab", "clipboardWrite"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EasyCopy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>EasyCopy</h2>
+  
+  <!-- Operator button to reveal options -->
+  <button id="operatorButton">Operators</button>
+  <!-- <button id="operatorButton">Tickets</button> -->
+
+  <!-- Options that will be revealed -->
+  <div class="option">
+    <input type="radio" id="cart" name="fruit" value='cart'>
+    <label for="cart">Cart</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="Shopping Cart" name="fruit" value="Shopping Cart">
+    <label for="Shopping Cart">Shopping Cart</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="wheel encoder" name="fruit" value="wheel encoder">
+    <label for="wheel encoder">wheel encoder</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="cleaning head failures" name="fruit" value="cleaning head failures">
+    <label for="cleaning head failures">cleaning head failures</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="forklift" name="fruit" value="forklift">
+    <label for="forklift">forklift</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="blocked path" name="fruit" value="blocked path">
+    <label for="blocked path">blocked path</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="Estop" name="fruit" value="Estop">
+    <label for="Estop">Estop</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="High Latency" name="fruit" value="High Latency">
+    <label for="High Latency">High Latency</label>
+  </div>
+  <div class="option">
+    <input type="radio" id="Narrow space" name="fruit" value="narrow space">
+    <label for="Narrow space">Narrow space</label>
+  </div>
+  
+  <button id="copyButton" style="display: none;">Copy Selected Fruit</button> <!-- Hide copy button initially -->
+  
+  <script src="popup.js"></script>
+</body>
+</html>
