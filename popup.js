@@ -1,22 +1,24 @@
 document.getElementById('operatorButton').addEventListener('click', () => {
-    const options = document.querySelectorAll('.option');
-    options.forEach(option => {
-        option.style.display = 'block'; // Show each option
-    });
-
-    document.getElementById('copyButton').style.display = 'block'; // Show the copy button
+    const dropdown = document.getElementById('fruitDropdown');
+    const copyButton = document.getElementById('copyButton');
+    
+    // Toggle the display of the dropdown and copy button
+    if (dropdown.style.display === 'none') {
+        dropdown.style.display = 'block';
+        copyButton.style.display = 'block';
+    } else {
+        dropdown.style.display = 'none';
+        copyButton.style.display = 'none';
+    }
 });
 
-document.querySelectorAll('input[name="fruit"]').forEach(radio => {
-    radio.addEventListener('change', () => {
-        const selectedFruit = document.querySelector('input[name="fruit"]:checked');
-        if (selectedFruit) {
-            navigator.clipboard.writeText(` / RA called for ${selectedFruit.value} and ended in no response`)
-            // .then(() => {
-            //     alert(`Copied: Ramu is eating ${selectedFruit.value}`);
-            // }).catch(err => {
-            //     console.error('Failed to copy text: ', err);
-            // });
-        }
+document.getElementById('copyButton').addEventListener('click', () => {
+    const selectedOption = document.getElementById('fruitDropdown').value;
+    const textToCopy = `/RA called for ${selectedOption} and ended in no response`;
+    
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        alert(`Text copied to clipboard: ${textToCopy}`);
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
     });
 });

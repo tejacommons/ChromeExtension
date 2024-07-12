@@ -1,28 +1,21 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    padding: 10px;
-    min-width:  500px;
-  }
-  
-  button {
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  .options-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Gap between option items */
-  }
-  
-  .option {
-    width: calc(25% - 10px); /* Four items per row (25% width with 10px gap) */
-    margin-bottom: 10px;
-  }
-  
-  .option input[type="radio"] {
-    margin-right: 5px;
-  }
-  
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#fruitDropdown {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.option {
+  display: none; /* Hide individual options initially */
+}
