@@ -1,8 +1,13 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
   padding: 10px;
+  width: 200px;
+  background-image: linear-gradient(white, pink);
+}
+img{
+  width: 48px;
+  height: 48px;
+  display: inline;
 }
 
 button {
@@ -10,12 +15,26 @@ button {
   margin-top: 10px;
 }
 
-#fruitDropdown {
+select, input[type="number"], input[type="text"] {
   margin-top: 10px;
   padding: 10px;
-  width: 100%;
+  width: 70%;
+}
+
+#operatorButton,#ticketsButton,#copyButton {
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: slateblue;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+
+#operatorButton:active,#ticketsButton:active,#copyButton:active{
+  transform: scale(0.95); /* Scale down the button when clicked */
 }
 
 .option {
-  display: none; /* Hide individual options initially */
+  margin-top: 10px;
 }
