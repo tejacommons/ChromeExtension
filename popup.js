@@ -118,7 +118,7 @@ document.getElementById('copyButton').addEventListener('click', () => {
     }
 
     navigator.clipboard.writeText(textToCopy).then(() => {
-        // alert(`Text copied to clipboard:\n\n${textToCopy}`);
+        alert(`Text copied to clipboard:\n\n${textToCopy}`);
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });
